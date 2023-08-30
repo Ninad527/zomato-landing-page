@@ -1,2 +1,3 @@
 #This is my zomato landing page clone
-created using html and css
+
+This is my new branch setup
