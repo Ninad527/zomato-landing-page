@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero__section{
+  background-image: url(https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png);
+  min-height: 60vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 48px;
+  height: 60px;
+  font-size: 16px;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: white;
+}
+
+.navbar__menu_container{
+  display: flex;
+  gap: 20px;
+}
+
+.navbar__menu_container .user_icon{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  display: none;
+}
+
+.hero__section_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  flex-direction: column;
+  height: calc(60vh - 60px);
+}
+
+.hero__section_logo{
+  width: 220px;
+  height: auto;
+}
+
+.hero__section_title{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.hero__section_input_container{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: white;
+  padding: 10px;
+  gap: 10px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.hero__section_location_container,
+.hero__section_search_container{
+  border: none;
+  padding: 5px;
+  outline: none;
+}
+
+.hero__section_location_container{
+  width: 35%;
+  border-right: 2px solid #e0e0e0;
+}
+
+.hero__section_search_container{
+  width: 35%;
+}
+
+
+@media only screen and (max-width: 600px){
+  .navbar__menu_container .user_icon{
+    display: flex;
+  }
+
+  .link{
+    display: none;
+  }
+
+  .navbar{
+    padding: 16px;
+  }
+
+  .hero__section{
+    min-height: 80vh;
+  }
+
+  .hero__section_input_container{
+    flex-direction: column;
+    background-color: transparent;
+    width: 80%;
+    gap: 5px;
+  }
+
+  .hero__section_location_container,
+  .hero__section_search_container{
+    padding: 15px;
+    border-radius: 10px;
+    width: 95%;
+  }
+
+  .hero__section_title{
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .hero__section_container{
+    height: calc(80vh - 60px);
+  }
+}
